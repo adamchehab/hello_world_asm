@@ -1,6 +1,7 @@
 all: clear
-	nasm -f elf64 hello.asm -o hello.o
+	nasm -f elf64 hello.asm
 	ld hello.o -o hello
+	./hello
 
 clear:
 	@rm -f hello.o
